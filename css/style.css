@@ -5,7 +5,7 @@
 }
 
 body {
-  margin-top: 100px;
+  margin: 100px 0;
 }
 
 h1,
@@ -32,12 +32,6 @@ p {
   line-height: 1.5;
 }
 
-@media (max-width: 576px) {
-  h1 {
-    font-size: 50px;
-  }
-}
-
 .navigation-links {
   display: flex;
   margin-top: 40px;
@@ -56,6 +50,9 @@ p {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
+}
+.primary-link:hover {
+  color: var(--secondary-color);
 }
 
 .secondary-link {
@@ -91,4 +88,23 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 38px;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  .project-link {
+    display: block;
+    text-align: center;
+    margin: 0 40px;
+  }
 }
